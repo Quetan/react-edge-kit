@@ -6,7 +6,7 @@
 		"react-edge-kit": "bin/cli.cjs"
 	},
 	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
-	"version": "0.1.7",
+	"version": "0.1.75",
 	"type": "module",
 	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
@@ -24,9 +24,6 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Quetan/react-edge-kit.git"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
 	},
 	"scripts": {
 		"dev": "vite",
