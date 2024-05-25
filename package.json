@@ -4,11 +4,22 @@
 	"private": false,
 	"version": "0.1.0",
 	"type": "module",
-	"author": "Quetan",
-	"authorUrl": "https://github.com/quetan",
+	"author": "Quetan <quetan@vk.com>",
+	"keywords": [
+		"reactEdge",
+		"template",
+		"starter-kit",
+		"TypeScript",
+		"React",
+		"TanStack Router",
+		"Shadcn/ui",
+		"Tailwind CSS",
+		"front-end"
+	],
+	"authorUrl": "https://t.me/KorkinK",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Quetan/react-edge-kit.git"
+		"url": "git+https://github.com/Quetan/react-edge-kit.git"
 	},
 	"scripts": {
 		"dev": "vite",
