@@ -29,7 +29,47 @@ const Welcome: FC = () => (
 					(FSD) architecture and PWA-ready.
 				</p>
 			</blockquote>
-
+			<div className='mt-10'>
+				<h2 className='mb-4 text-2xl font-bold tracking-tight text-foreground'>
+					Author
+				</h2>
+				<div className='flex flex-row items-start gap-10'>
+					<div className='flex flex-col items-center'>
+						<img
+							src='https://avatars.githubusercontent.com/u/22724980?v=4'
+							className='mb-2 block h-auto w-32 rounded-full border-4 border-primary/40'
+						/>
+						<h3 className='text-center text-lg font-medium leading-tight text-foreground'>
+							Quetan <br /> (Korkin Kirill)
+						</h3>
+					</div>
+					<ul className='space-y-2'>
+						<li className='text-lg font-medium tracking-tight text-foreground'>
+							Contacts
+						</li>
+						<li className='text-lg text-muted-foreground'>
+							Telegram:{' '}
+							<a href='https://t.me/KorkinK' className='text-primary underline'>
+								@quetan
+							</a>
+						</li>
+						<li className='text-lg text-muted-foreground'>
+							GitHub:{' '}
+							<a
+								href='https://github.com/quetan'
+								className='text-primary underline'>
+								github/quetan
+							</a>
+						</li>
+						<li className='text-lg text-muted-foreground'>
+							Email:{' '}
+							<a href='mailto:quetan@vk.com' className='text-primary underline'>
+								quetan@vk.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div className='mt-10'>
 				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
 					Features
@@ -236,130 +276,6 @@ const Welcome: FC = () => (
 					</li>
 				</ul>
 			</div>
-
-			<div className='mt-10'>
-				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
-					Author
-				</h2>
-				<img
-					src='https://avatars.githubusercontent.com/u/22724980?v=4'
-					className='my-4 block h-32 w-32 rounded-full border-4 border-primary/40'
-				/>
-
-				<div className='mt-4 flex items-center'>
-					<h3 className='text-lg font-medium text-foreground'>
-						Quetan (Korkin Kirill)
-					</h3>
-				</div>
-				<ul className='mt-4 space-y-2'>
-					<li className='text-lg text-muted-foreground'>
-						Telegram:{' '}
-						<a href='https://t.me/KorkinK' className='text-primary underline'>
-							@quetan
-						</a>
-					</li>
-					<li className='text-lg text-muted-foreground'>
-						GitHub:{' '}
-						<a
-							href='https://github.com/quetan'
-							className='text-primary underline'>
-							quetan
-						</a>
-					</li>
-					<li className='text-lg text-muted-foreground'>
-						Email:{' '}
-						<a href='mailto:quetan@vk.com' className='text-primary underline'>
-							quetan@vk.com
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div className='mt-10'>
-				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
-					Getting Started
-				</h2>
-
-				<div className='mt-4 space-y-6'>
-					<div className='space-y-2'>
-						<h3 className='text-lg font-medium text-foreground'>
-							Prerequisites
-						</h3>
-
-						<p className='text-base text-muted-foreground'>
-							Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on
-							your machine.
-						</p>
-					</div>
-
-					<div className='space-y-2'>
-						<h3 className='text-lg font-medium text-foreground'>
-							Detailed Steps
-						</h3>
-
-						<ol className='flex list-inside list-decimal flex-col space-y-2 text-base text-muted-foreground'>
-							<li>
-								<span>Clone the repository:</span>
-								<br />
-								<code className='bg-muted text-xs text-muted-foreground'>
-									git clone https://github.com/quetan/react-edge-kit.git
-									<br />
-									cd react-edge-kit
-								</code>
-							</li>
-							<li>
-								<span>Install dependencies:</span>
-								<br />
-								<code className='bg-muted text-xs text-muted-foreground'>
-									yarn install
-								</code>
-							</li>
-							<li>
-								<span>Run the development server:</span>
-								<br />
-								<code className='bg-muted text-xs text-muted-foreground'>
-									yarn dev
-								</code>
-								<p>
-									The application will be available at{' '}
-									<a
-										className='text-primary underline'
-										href='http://localhost:5173'>
-										http://localhost:5173
-									</a>
-									.
-								</p>
-							</li>
-							<li>
-								<span>Build for production:</span>
-								<br />
-								<code className='bg-muted text-xs text-muted-foreground'>
-									yarn build
-								</code>
-								<p>
-									The built files will be in the{' '}
-									<code className='bg-muted text-xs text-muted-foreground'>
-										dist
-									</code>{' '}
-									directory.
-								</p>
-							</li>
-							<li>
-								<span> Preview the production build:</span>
-								<br />
-								<code className='bg-muted text-xs text-muted-foreground'>
-									yarn preview
-								</code>
-								<p>
-									This will start a local server to preview the production
-									build.
-								</p>
-							</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-
 			<div className='mt-10'>
 				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
 					About Feature-Sliced Design
@@ -378,7 +294,7 @@ const Welcome: FC = () => (
 						<img
 							src='https://feature-sliced.design/ru/assets/images/visual_schema-e826067f573946613dcdc76e3f585082.jpg'
 							alt='Feature slice design scheme'
-							className='h-96 w-auto'
+							className='h-auto w-full'
 						/>
 					</div>
 				</div>
@@ -393,6 +309,22 @@ const Welcome: FC = () => (
 					<p className='text-base text-muted-foreground'>
 						Feel free to open issues or submit pull requests to help improve
 						this project. Your contributions are welcome!
+					</p>
+				</div>
+			</div>
+
+			<div className='mt-10'>
+				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
+					License
+				</h2>
+
+				<div className='mt-4'>
+					<p className='text-base text-muted-foreground'>
+						<a
+							href='https://github.com/Quetan/react-edge-kit#MIT-1-ov-file'
+							className='text-primary underline'>
+							MIT
+						</a>
 					</p>
 				</div>
 			</div>

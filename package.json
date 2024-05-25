@@ -2,9 +2,11 @@
 	"name": "react-edge-kit",
 	"description": "A powerful template for creating single-page applications (SPA) using TypeScript, React, TanStack Router, Shadcn/ui, and TailwindCSS. This starter kit follows the Feature-Sliced Design (FSD) architecture and PWA-ready.",
 	"private": false,
-	"version": "0.1.0",
+	"bin": "./bin/cli.cjs",
+	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
+	"version": "0.1.501",
 	"type": "module",
-	"author": "Quetan <quetan@vk.com>",
+	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
 		"reactEdge",
 		"template",

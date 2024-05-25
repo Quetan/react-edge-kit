@@ -6,6 +6,31 @@ A powerful template for creating single-page applications (SPA) using TypeScript
 
 > _ReactEdge Kit - шаблон для создания SPA на базе TypeScript, React, TanStack Router, Shadcn/ui и TailwindCSS. Реализован на основе [архитектуры FSD](https://feature-sliced.design)._
 
+## Table of contents / _Оглавление_
+
+- [Author / Автор](#author--автор)
+  - [Contacts / Контакты](#contacts--контакты)
+- [Features / Особенности](#features--особенности)
+- [Getting Started / Начало работы](#getting-started--начало-работы)
+  - [Prerequisites / Предварительные требования](#prerequisites--предварительные-требования)
+  - [Detailed Steps / Подробные шаги](#detailed-steps--подробные-шаги)
+  - [File structure / Структура файлов](#file-structure--структура-файлов)
+- [About Feature-Sliced Design / Про Feature-Sliced Design](#about-feature-sliced-design--про-feature-sliced-design)
+  - [Feature-Sliced Design scheme](#feature-sliced-design-scheme)
+- [FAQ / Часто задаваемые вопросы](#faq--часто-задаваемые-вопросы)
+- [Contribution / Сотрудничество](#contribution--сотрудничество)
+- [License / Лицензия](#license--лицензия)
+
+## Author / _Автор_
+
+### Quetan (Korkin Kirill) / _Quetan (Коркин Кирилл)_
+
+### Contacts / _Контакты_
+
+- **Telegram**: [@quetan](https://t.me/KorkinK)
+- **GitHub**: [quetan](https://github.com/quetan)
+- **Email**: [quetan@vk.com](mailto:quetan@vk.com)
+
 ## Features / _Особенности_
 
 - **Development Environment (_Среда разработки_)**:
@@ -21,42 +46,25 @@ A powerful template for creating single-page applications (SPA) using TypeScript
 - **Architectural Methodology (_Архитектура приложения_)**: FSD ([Documentation](https://feature-sliced.design/docs)) - A methodology for scalable frontend architecture.
 - **PWA-Ready**: Includes a webmanifest for Progressive Web App (PWA) support.
 
-## Author / _Автор_
-
-### Quetan (Korkin Kirill) / _Quetan (Коркин Кирилл)_
-
-### Contacts / _Контакты_
-
-- **Telegram**: [@quetan](https://t.me/KorkinK)
-- **GitHub**: [quetan](https://github.com/quetan)
-- **Email**: [quetan@vk.com](mailto:quetan@vk.com)
-
 ## Getting Started / _Начало работы_
 
 ### Prerequisites / _Предварительные требования_
 
 Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
 
-> _Убедитесь, что на вашем компьютере установлены Node.js и Yarn (или npm, pnpm, Bun)._
+> _Убедитесь, что на вашем компьютере установлены Node.js и NPM (или yarn, pnpm, Bun)._
 
 ### Detailed Steps / _Подробные шаги_
 
-1. **Clone the repository:**
-   (_Клонируйте репозиторий_)
+1. **Execute the installation script:**
+   (_Запустите установочный скрипт_)
 
    ```sh
-   git clone https://github.com/quetan/react-edge-kit.git
-   cd react-edge-kit
+   npx react-edge-kit <your-project-name>
+   cd <your-project-name>
    ```
 
-2. **Install dependencies:**
-   (_Установите зависимости_)
-
-   ```sh
-   yarn install
-   ```
-
-3. **Run the development server:**
+2. **Run the development server:**
    (_Запустите сервер для разработки_)
 
    ```sh
@@ -65,7 +73,7 @@ Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
 
    The application will be available at `http://localhost:5173` (_Приложение будет доступно по адресу `http://localhost:5173`_).
 
-4. **Build for production:**
+3. **Build for production:**
    (_Подготовьте к продакшену_)
 
    ```sh
@@ -75,7 +83,7 @@ Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
    The built files will be in the `dist` directory.
    (_Полученные файлы будут лежать в директории `dist`._)
 
-5. **Preview the production build:**
+4. **Preview the production build:**
 
    ```sh
    yarn preview
@@ -109,11 +117,11 @@ Feature-Sliced Design (FSD) is an architectural methodology for scaffolding fron
 
 > Feature-Sliced Design (FSD) — это архитектурная методология для проектирования frontend-приложений. Проще говоря, это свод правил и соглашений по организации кода. Главная цель методологии — сделать проект понятным и структурированным, особенно в условиях регулярного изменения требований бизнеса.
 
-Read documentation here: [Documentation](https://feature-sliced.design/docs/get-started)
-
 ### Feature-Sliced Design scheme
 
 ![Feature slice design scheme](https://feature-sliced.design/assets/ideal-img/visual_schema.b6c18f6.1030.jpg)
+
+Read documentation here: [documentation link](https://feature-sliced.design/docs/get-started)
 
 ## FAQ / _Часто задаваемые вопросы_
 
