@@ -101,3 +101,7 @@ Read documentation here: [Documentation](https://feature-sliced.design/docs/get-
 Feel free to open issues or submit pull requests to help improve this project. Your contributions are welcome!
 
 > _Буду рад открытым issue или pull request-ам! Ваш вклад приветствуется!_
+
+## License / _Лицензия_
+
+**[MIT](./LICENSE)**
