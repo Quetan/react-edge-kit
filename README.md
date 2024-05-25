@@ -68,7 +68,7 @@ Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
    (_Запустите сервер для разработки_)
 
    ```sh
-   yarn dev
+   npm run dev
    ```
 
    The application will be available at `http://localhost:5173` (_Приложение будет доступно по адресу `http://localhost:5173`_).
@@ -77,7 +77,7 @@ Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
    (_Подготовьте к продакшену_)
 
    ```sh
-   yarn build
+   npm run build
    ```
 
    The built files will be in the `dist` directory.
@@ -86,7 +86,7 @@ Ensure you have Node.js and Yarn (or npm, pnpm, bun) installed on your machine.
 4. **Preview the production build:**
 
    ```sh
-   yarn preview
+   npm run preview
    ```
 
    This will start a local server to preview the production build.

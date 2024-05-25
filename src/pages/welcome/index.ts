@@ -1,3 +1,3 @@
-import Welcome from './ui/Welcome';
+import Welcome from './ui/welcome-page';
 
 export default Welcome;

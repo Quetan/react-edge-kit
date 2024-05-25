@@ -4,7 +4,7 @@
 	"private": false,
 	"bin": "./bin/cli.cjs",
 	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
-	"version": "0.1.501",
+	"version": "0.1.6",
 	"type": "module",
 	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
@@ -31,6 +31,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"@radix-ui/react-slot": "^1.0.2",
 		"@tanstack/react-router": "^1.32.5",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",

@@ -1,39 +1,50 @@
+import { ThemeToggler } from '@/features/toggle-theme';
+import { Button } from '@/shared/ui/button';
 import PageWrapper from '@/shared/ui/page-wrapper';
 import { Title } from '@/shared/ui/title';
+import { StarIcon } from 'lucide-react';
 import type { FC } from 'react';
 
 const Welcome: FC = () => (
 	<PageWrapper>
+		<ThemeToggler className='fixed right-6 top-4' />
 		<div className='mx-auto max-w-screen-sm px-4 tracking-tighter sm:px-6 lg:px-8'>
 			<div className='flex items-center justify-center'>
-				<img src='/logo.svg' alt='ReactEdge Kit logo' />
+				<img src='/logo.svg' alt='React Edge Kit logo' />
 			</div>
 
 			<Title
-				title='ReactEdge Kit'
+				title='React Edge Kit'
 				size='xl'
 				variant='primary'
 				className='mx-auto mt-6 block text-center'
 			/>
 
-			<blockquote className='mt-6 text-center text-xl font-medium text-muted-foreground'>
-				<p>
-					ReactEdge Kit - is a powerful template for creating single-page
-					applications (SPA) using TypeScript, React, TanStack Router,
-					Shadcn/ui, and TailwindCSS. This starter kit follows the{' '}
+			<p className='mt-6 text-center text-xl font-medium leading-tight text-muted-foreground'>
+				React Edge Kit - is a powerful template for creating single-page
+				applications (SPA) using TypeScript, React, TanStack Router, Shadcn/ui,
+				and TailwindCSS. This starter kit follows the{' '}
+				<a className='text-primary' href='https://feature-sliced.design'>
+					Feature-Sliced Design
+				</a>{' '}
+				(FSD) architecture and PWA-ready.
+			</p>
+
+			<div className='mb-4 mt-8 flex w-full flex-row flex-wrap items-center justify-center gap-2'>
+				<Button className='text-lg' asChild size='lg' variant='default'>
 					<a
-						className='text-primary underline'
-						href='https://feature-sliced.design'>
-						Feature-Sliced Design
-					</a>{' '}
-					(FSD) architecture and PWA-ready.
-				</p>
-			</blockquote>
+						className='items-cente flex'
+						href='https://github.com/quetan/react-edge-kit'>
+						Rate on GitHub <StarIcon className='ml-2 h-4 w-4' />
+					</a>
+				</Button>
+			</div>
+
 			<div className='mt-10'>
 				<h2 className='mb-4 text-2xl font-bold tracking-tight text-foreground'>
 					Author
 				</h2>
-				<div className='flex flex-row items-start gap-10'>
+				<div className='flex flex-row items-center gap-10'>
 					<div className='flex flex-col items-center'>
 						<img
 							src='https://avatars.githubusercontent.com/u/22724980?v=4'
@@ -47,23 +58,30 @@ const Welcome: FC = () => (
 						<li className='text-lg font-medium tracking-tight text-foreground'>
 							Contacts
 						</li>
-						<li className='text-lg text-muted-foreground'>
-							Telegram:{' '}
-							<a href='https://t.me/KorkinK' className='text-primary underline'>
+						<li className='text-lg leading-tight text-muted-foreground'>
+							Telegram:
+							<br />
+							<a
+								href='https://t.me/KorkinK'
+								className='text-base text-primary underline'>
 								@quetan
 							</a>
 						</li>
-						<li className='text-lg text-muted-foreground'>
-							GitHub:{' '}
+						<li className='text-lg leading-tight text-muted-foreground'>
+							GitHub:
+							<br />
 							<a
 								href='https://github.com/quetan'
-								className='text-primary underline'>
+								className='text-base text-primary underline'>
 								github/quetan
 							</a>
 						</li>
-						<li className='text-lg text-muted-foreground'>
-							Email:{' '}
-							<a href='mailto:quetan@vk.com' className='text-primary underline'>
+						<li className='text-lg leading-tight text-muted-foreground'>
+							Email:
+							<br />
+							<a
+								href='mailto:quetan@vk.com'
+								className='text-base text-primary underline'>
 								quetan@vk.com
 							</a>
 						</li>
@@ -74,15 +92,14 @@ const Welcome: FC = () => (
 				<h2 className='text-2xl font-bold tracking-tight text-foreground'>
 					Features
 				</h2>
-
 				<ul className='mt-4 grid grid-cols-1 gap-6 lg:grid-cols-2'>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>
 								Development Environment
 							</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 text-left'>
 							<li className='text-base text-muted-foreground'>
 								{' '}
 								<a
@@ -94,7 +111,7 @@ const Welcome: FC = () => (
 								<a href='./vite.config.ts' className='text-primary underline'>
 									configuration
 								</a>
-								) .
+								).
 							</li>
 						</ul>
 						<img
@@ -105,13 +122,13 @@ const Welcome: FC = () => (
 							height={80}
 						/>
 					</li>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>
 								App Routing
 							</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 text-left'>
 							<li className='text-base text-muted-foreground'>
 								<a
 									className='text-primary underline'
@@ -129,11 +146,11 @@ const Welcome: FC = () => (
 							height={80}
 						/>
 					</li>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>UI</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 text-left'>
 							<li className='text-base text-muted-foreground'>
 								<a
 									href='https://ui.shadcn.com/'
@@ -196,13 +213,13 @@ const Welcome: FC = () => (
 								strokeWidth='16'></line>
 						</svg>
 					</li>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>
 								Code Formatting
 							</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2  text-left'>
 							<li className='text-base text-muted-foreground'>
 								Prettier: Ensures consistent code style (
 								<a href='./.prettierrc' className='text-primary underline'>
@@ -226,13 +243,13 @@ const Welcome: FC = () => (
 							height={80}
 						/>
 					</li>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>
 								Architectural Methodology
 							</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2  text-left'>
 							<li className='text-base text-muted-foreground'>
 								FSD (
 								<a
@@ -251,11 +268,11 @@ const Welcome: FC = () => (
 							height={80}
 						/>
 					</li>
-					<li className='col-span-1 flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm'>
+					<li className='col-span-1 flex flex-col rounded-lg border border-muted bg-card p-6 shadow-sm'>
 						<div className='flex items-center justify-center'>
 							<h3 className='text-lg font-medium text-foreground'>PWA-Ready</h3>
 						</div>
-						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2 bg-card text-left'>
+						<ul className='mx-auto mb-auto mt-4 min-h-24 space-y-2  text-left'>
 							<li className='text-base text-muted-foreground'>
 								Includes a{' '}
 								<a
@@ -294,7 +311,7 @@ const Welcome: FC = () => (
 						<img
 							src='https://feature-sliced.design/ru/assets/images/visual_schema-e826067f573946613dcdc76e3f585082.jpg'
 							alt='Feature slice design scheme'
-							className='h-auto w-full'
+							className='h-auto w-full dark:invert-[0.96]'
 						/>
 					</div>
 				</div>
