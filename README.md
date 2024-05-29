@@ -8,18 +8,18 @@ A powerful template for creating single-page applications (SPA) using TypeScript
 
 ## Table of contents / _Оглавление_
 
-- [🗿 Author / Автор](#author--автор)
-  - [✉️ Contacts / Контакты](#contacts--контакты)
-- [✨ Features / Особенности](#features--особенности)
-- [🛠 Getting Started / Начало работы](#getting-started--начало-работы)
-  - [⚙️ Prerequisites / Предварительные требования](#prerequisites--предварительные-требования)
-  - [📄 Detailed Steps / Подробные шаги](#detailed-steps--подробные-шаги)
-  - [📂 File structure / Структура файлов](#file-structure--структура-файлов)
-- [📦 About Feature-Sliced Design / Про FSD](#about-feature-sliced-design--про-feature-sliced-design)
-  - [📚 Feature-Sliced Design scheme](#feature-sliced-design-scheme)
-- [⁉️ FAQ / Часто задаваемые вопросы](#faq--часто-задаваемые-вопросы)
-- [✍️ Contribution / Сотрудничество](#contribution--сотрудничество)
-- [⚖️ License / Лицензия](#license--лицензия)
+- [🗿 Author / Автор](#-author--автор)
+  - [✉️ Contacts / Контакты](#️-contacts--контакты)
+- [✨ Features / Особенности](#-features--особенности)
+- [🛠 Getting Started / Начало работы](#-getting-started--начало-работы)
+  - [⚙️ Prerequisites / Предварительные требования](#-prerequisites--предварительные-требования)
+  - [📄 Detailed Steps / Подробные шаги](#-detailed-steps--подробные-шаги)
+  - [📂 File structure / Структура файлов](#-file-structure--структура-файлов)
+- [📦 About Feature-Sliced Design / Про FSD](#-about-feature-sliced-design--про-feature-sliced-design)
+  - [📚 Feature-Sliced Design scheme](#-feature-sliced-design-scheme)
+- [⁉️ FAQ / Часто задаваемые вопросы](#-faq--часто-задаваемые-вопросы)
+- [✍️ Contribution / Сотрудничество](#-contribution--сотрудничество)
+- [⚖️ License / Лицензия](#-license--лицензия)
 
 ## 🗿 Author / _Автор_
 
@@ -133,9 +133,9 @@ Read documentation here: [documentation link](https://feature-sliced.design/docs
 
 1. **❔ How do I start a new project based on ReactEdge Kit?** / _Как начать новый проект на основе ReactEdge Kit?_
 
-ℹ️ Follow the instructions in the ["Getting Started"](#getting-started--начало-работы) section. Ensure you have Node.js and NPM (or yarn, pnpm, Bun) installed.
+ℹ️ Follow the instructions in the ["Getting Started"](#-getting-started--начало-работы) section. Ensure you have Node.js and NPM (or yarn, pnpm, Bun) installed.
 
-> Следуйте инструкциям в разделе ["Начало работы"](#getting-started--начало-работы). Убедитесь, что у вас установлены Node.js и NPM (или yarn, pnpm, Bun).
+> Следуйте инструкциям в разделе ["Начало работы"](#-getting-started--начало-работы). Убедитесь, что у вас установлены Node.js и NPM (или yarn, pnpm, Bun).
 
 2. **❔ When and why should I use FSD architecture?** / _Когда и зачем мне использовать архитектуру FSD?_
 
@@ -173,9 +173,9 @@ ReactEdge Kit uses a [file-based routing system](https://tanstack.com/router/lat
 
 > ReactEdge Kit уже включает webmanifest для поддержки PWA. Убедитесь, что ваш проект правильно настроен и протестирован для работы в режиме PWA.
 
-If you have additional questions, feel free to contact through the provided [contacts](#contacts--контакты) or open an issue on GitHub.
+If you have additional questions, feel free to contact through the provided [contacts](#-contacts--контакты) or open an issue on GitHub.
 
-> Если у вас возникнут дополнительные вопросы, не стесняйтесь обращаться через указанные [контакты](#contacts--контакты) или открывать issue на GitHub.
+> Если у вас возникнут дополнительные вопросы, не стесняйтесь обращаться через указанные [контакты](#-contacts--контакты) или открывать issue на GitHub.
 
 ## ✍️ Contribution / _Сотрудничество_
 

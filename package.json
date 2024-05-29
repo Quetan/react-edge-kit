@@ -6,7 +6,7 @@
 		"react-edge-kit": "bin/cli.mjs"
 	},
 	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
-	"version": "0.2.0",
+	"version": "0.2.2",
 	"type": "module",
 	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
