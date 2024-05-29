@@ -10,7 +10,7 @@ const Welcome: FC = () => (
 		<ThemeToggler className='fixed right-6 top-4' />
 		<div className='mx-auto max-w-screen-sm px-4 tracking-tighter sm:px-6 lg:px-8'>
 			<div className='flex items-center justify-center'>
-				<img src='/logo.svg' alt='React Edge Kit logo' />
+				<img src='./logo.svg' alt='React Edge Kit logo' />
 			</div>
 
 			<Title
