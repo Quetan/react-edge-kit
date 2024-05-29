@@ -13,10 +13,10 @@ declare module '@tanstack/react-router' {
 	}
 }
 
-const AppRouter: FC = () => (
+const App: FC = () => (
 	<main className='relative min-h-dvh'>
 		<RouterProvider router={router} />
 	</main>
 );
 
-export default AppRouter;
+export default App;

@@ -3,10 +3,10 @@
 	"description": "A powerful template for creating single-page applications (SPA) using TypeScript, React, TanStack Router, Shadcn/ui, and TailwindCSS. This starter kit follows the Feature-Sliced Design (FSD) architecture and PWA-ready.",
 	"private": false,
 	"bin": {
-		"react-edge-kit": "bin/cli.cjs"
+		"react-edge-kit": "bin/cli.mjs"
 	},
 	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
-	"version": "0.1.75",
+	"version": "0.2.0",
 	"type": "module",
 	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
@@ -45,7 +45,9 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
+		"@inquirer/prompts": "^5.0.4",
 		"@tanstack/router-vite-plugin": "^1.32.2",
+		"@types/inquirer": "^9.0.7",
 		"@types/node": "^20.12.12",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
@@ -53,6 +55,7 @@
 		"@typescript-eslint/parser": "^7.2.0",
 		"@vitejs/plugin-react": "^4.2.1",
 		"autoprefixer": "^10.4.19",
+		"cross-spawn": "^7.0.3",
 		"eslint": "^8.57.0",
 		"eslint-plugin-autofix": "^2.0.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
