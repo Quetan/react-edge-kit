@@ -1,7 +1,12 @@
-import type { FC, PropsWithChildren } from 'react';
+import type { FC, HTMLAttributes, PropsWithChildren } from 'react';
+import { cn } from '../lib/utils';
 
-const PageWrapper: FC<PropsWithChildren> = ({ children }) => (
-	<div className='container relative min-h-dvh py-24'>{children}</div>
+interface IProps extends HTMLAttributes<HTMLDivElement>, PropsWithChildren {}
+
+const PageWrapper: FC<IProps> = ({ children, className, ...props }) => (
+	<div className={cn('container relative min-h-96', className)} {...props}>
+		{children}
+	</div>
 );
 
 export default PageWrapper;

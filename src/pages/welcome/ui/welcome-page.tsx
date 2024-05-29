@@ -6,7 +6,7 @@ import { StarIcon } from 'lucide-react';
 import type { FC } from 'react';
 
 const Welcome: FC = () => (
-	<PageWrapper>
+	<PageWrapper className='min-h-dvh py-24'>
 		<ThemeToggler className='fixed right-6 top-4' />
 		<div className='mx-auto max-w-screen-sm px-4 tracking-tighter sm:px-6 lg:px-8'>
 			<div className='flex items-center justify-center'>
@@ -14,11 +14,11 @@ const Welcome: FC = () => (
 			</div>
 
 			<Title
-				title='React Edge Kit'
 				size='xl'
 				variant='primary'
-				className='mx-auto mt-6 block text-center'
-			/>
+				className='mx-auto mt-6 block text-center'>
+				React Edge Kit
+			</Title>
 
 			<p className='mt-6 text-center text-xl font-medium leading-tight text-muted-foreground'>
 				React Edge Kit - is a powerful template for creating single-page

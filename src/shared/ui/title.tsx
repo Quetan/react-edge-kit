@@ -10,11 +10,11 @@ const TitleVariants = cva('flex flex-row items-center gap-4', {
 			primary: 'text-primary'
 		},
 		size: {
-			default: 'text-xl font-semibold',
-			sm: 'text-lg font-medium',
-			lg: 'text-2xl font-bold tracking-wide',
-			xl: 'text-5xl font-bold tracking-tight',
-			xs: 'text-base font-medium'
+			default: 'text-lg lg:text-xl font-semibold',
+			xs: 'text-base font-medium',
+			sm: 'text-base lg:text-lg font-medium',
+			lg: 'text-xl lg:text-2xl font-bold',
+			xl: 'text-4xl lg:text-5xl font-bold'
 		}
 	},
 	defaultVariants: {
@@ -25,20 +25,18 @@ const TitleVariants = cva('flex flex-row items-center gap-4', {
 
 interface ITitleProps
 	extends React.HTMLAttributes<HTMLHeadingElement>,
-		VariantProps<typeof TitleVariants> {
-	title: string;
-	backButton?: boolean;
-}
+		VariantProps<typeof TitleVariants>,
+		React.PropsWithChildren {}
 
 const Title: FC<ITitleProps> = ({
-	title,
+	children,
 	variant,
 	size,
 	className,
 	...props
 }) => (
 	<h1 className={cn(TitleVariants({ variant, size, className }))} {...props}>
-		{title}
+		{children}
 	</h1>
 );
 
