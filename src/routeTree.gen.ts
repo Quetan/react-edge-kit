@@ -10,19 +10,19 @@
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root';
+import { Route as rootRoute } from './routes/__root'
 
 // Create/Update Routes
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
-	interface FileRoutesByPath {}
+  interface FileRoutesByPath {}
 }
 
 // Create and export the route tree
 
-export const routeTree = rootRoute.addChildren({});
+export const routeTree = rootRoute.addChildren({})
 
 /* prettier-ignore-end */
 

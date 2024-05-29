@@ -2,7 +2,6 @@
 const spawn = require('cross-spawn');
 const fs = require('fs');
 const path = require('path');
-const { cwd } = require('process');
 
 // The first argument will be the project name.
 const projectName = process.argv[2];
@@ -59,7 +58,14 @@ fs.writeFileSync(
 );
 
 // Remove unnecessary files and directories
-const filesToRemove = ['.github', '.git', 'bin', 'README.md', 'LICENSE'];
+const filesToRemove = [
+	'.github',
+	'.git',
+	'bin',
+	'README.md',
+	'LICENSE',
+	'yarn.lock'
+];
 filesToRemove.forEach(file => {
 	const filePath = path.join(projectDir, file);
 	if (fs.existsSync(filePath)) {
