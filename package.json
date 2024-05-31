@@ -6,7 +6,7 @@
 		"react-edge-kit": "bin/cli.mjs"
 	},
 	"homepage": "https://github.com/Quetan/react-edge-kit#readme",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"type": "module",
 	"author": "Quetan<quetan@vk.com>",
 	"keywords": [
@@ -33,11 +33,13 @@
 	},
 	"license": "MIT",
 	"dependencies": {
+		"@inquirer/prompts": "^5.0.4",
 		"@radix-ui/react-slot": "^1.0.2",
 		"@tanstack/react-router": "^1.32.5",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
 		"cmdk": "^1.0.0",
+		"cross-spawn": "^7.0.3",
 		"lucide-react": "^0.378.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -45,9 +47,7 @@
 		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
-		"@inquirer/prompts": "^5.0.4",
 		"@tanstack/router-vite-plugin": "^1.32.2",
-		"@types/inquirer": "^9.0.7",
 		"@types/node": "^20.12.12",
 		"@types/react": "^18.2.66",
 		"@types/react-dom": "^18.2.22",
@@ -55,7 +55,6 @@
 		"@typescript-eslint/parser": "^7.2.0",
 		"@vitejs/plugin-react": "^4.2.1",
 		"autoprefixer": "^10.4.19",
-		"cross-spawn": "^7.0.3",
 		"eslint": "^8.57.0",
 		"eslint-plugin-autofix": "^2.0.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
